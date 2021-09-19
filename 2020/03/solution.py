@@ -31,4 +31,4 @@ def part2(input):
 	return count
 
 print("The solution to part 1 is {}.".format(part1(input)))
-print("The solution to part 1 is {}.".format(part2(input)))
+print("The solution to part 2 is {}.".format(part2(input)))
