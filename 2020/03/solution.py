@@ -11,10 +11,10 @@ def count_trees(input, x_inc, y_inc):
 	count = 0
 
 	while y < y_len:
-	    if is_tree(input[y][x]):
-	        count += 1
-	    x = (x + x_inc) % x_len
-	    y += y_inc
+		if is_tree(input[y][x]):
+			count += 1
+		x = (x + x_inc) % x_len
+		y += y_inc
 
 	return count
 
@@ -26,7 +26,7 @@ def part2(input):
 	count = 1
 
 	for (x, y) in slopes:
-	    count *= count_trees(input, x, y)
+		count *= count_trees(input, x, y)
 
 	return count
 
